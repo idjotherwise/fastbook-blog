@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <h1>
+        A super stylish home page
+    </h1>
+    <p>
+        Really interesting content, full of buzzwords like AI and MACHINE LEARNING!
+    </p>
+    {% if books %}
+    <ul style="text-align: left">
+        {% for book in books %}
+        <li key="{{book.id}}">Title: {{book.title}}, Author: {{book.author}}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+{% endblock %}
