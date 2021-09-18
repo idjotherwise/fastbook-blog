@@ -11,6 +11,7 @@
     <ul style="text-align: left">
         {% for book in books %}
         <li key="{{book.id}}">Title: {{book.title}}, Author: {{book.author}}</li>
+        <p>{{book.description}}</p>
         {% endfor %}
     </ul>
     {% endif %}
