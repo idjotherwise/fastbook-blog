@@ -4,9 +4,8 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
     color: black;
-    background: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    background: lightcyan;
+    width: 100%;
 }
 
 h1,
@@ -16,7 +15,7 @@ h4,
 h5,
 h6 {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 p {
@@ -24,14 +23,12 @@ p {
 }
 
 .content-wrapper {
-    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem auto 0 auto;
     height: 85vh;
     text-align: center;
-}
-
-
-.content-wrapper .content h1 span {
-    margin-top: 10px;
-    font-size: 60px;
-    text-align: left;
+    width: 56rem;
+    justify-content: center;
 }

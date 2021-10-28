@@ -10,8 +10,8 @@
     {% if books %}
     <ul style="text-align: left">
         {% for book in books %}
-        <li key="{{book.id}}">Title: {{book.title}}, Author: {{book.author}}</li>
-        <p>{{book.description}}</p>
+        <li key="{{book.id}}"><b>Title</b>: {{book.title}}<br/><b>Author</b>: {{book.author}}</li>
+        <p style="padding-left: 6rem;">{{book.description}}</p>
         {% endfor %}
     </ul>
     {% endif %}
